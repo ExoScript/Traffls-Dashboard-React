@@ -5,11 +5,16 @@ module.exports = {
         "Background": {
           "background_3": "#242b55ff",
           "background_1": "#ebf1ffff",
-          "background_2": "#fdfaffff"
+          "background_2": "#fdfaffff",
+          "background_4": "#f1f3f9ff"
         },
         "Gray": {
           "Black": "#000000",
           "White": "#FFFFFF"
+        },
+        "Status": {
+          "Green": "#1fb16dff",
+          "Red": "#981826ff"
         },
         "Border": {
           "Border": "#edf2f9ff"

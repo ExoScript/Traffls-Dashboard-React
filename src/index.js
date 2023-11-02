@@ -8,16 +8,26 @@ import {
 } from 'react-router-dom'
 
 import './style.css'
+import MailCloudAccounts from './views/mail-cloud-accounts'
+import MailCloudInbox from './views/mail-cloud-inbox'
 import Page from './views/page'
-import Home from './views/home'
+import MailCloudOverview from './views/mail-cloud-overview'
+import MailCloudLeads from './views/mail-cloud-leads'
 import NotFound from './views/not-found'
 
 const App = () => {
   return (
     <Router>
       <Switch>
+        <Route
+          component={MailCloudAccounts}
+          exact
+          path="/mail-cloud-accounts"
+        />
+        <Route component={MailCloudInbox} exact path="/mail-cloud-inbox" />
         <Route component={Page} exact path="/page" />
-        <Route component={Home} exact path="/" />
+        <Route component={MailCloudOverview} exact path="/" />
+        <Route component={MailCloudLeads} exact path="/mail-cloud-leads" />
         <Route component={NotFound} path="**" />
         <Redirect to="**" />
       </Switch>
